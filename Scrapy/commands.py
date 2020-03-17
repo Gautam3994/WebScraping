@@ -81,7 +81,7 @@ response.css('body > div > div:nth-child(2) > div.col-md-8 > div:nth-child(1) > 
 
 FOR ALL LINKS
 response.css('a::attr(href)').extract()
-
+response.css('div::attr(data-cel-widget)').extract() 
 
 """
 

@@ -16,11 +16,6 @@ def convert_price(price):
         return float(price.replace(",", '').replace("₹", '')) / USD_INR
 
 
-def pick_second(price_list):
-    print("-----------", price_list, type(price_list))
-    return price_list
-
-
 def shorten_link(full_link):
     product_id = full_link.split("/")[-1]
     return "https://amazon.in/dp/" + product_id

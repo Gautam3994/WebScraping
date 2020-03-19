@@ -17,7 +17,7 @@ def convert_price(price):
 
 
 def shorten_link(full_link):
-    product_id = full_link.split("/")[-1]
+    product_id = full_link.split("/")[-2]
     return "https://amazon.in/dp/" + product_id
 
 

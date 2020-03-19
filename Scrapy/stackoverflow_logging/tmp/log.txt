@@ -1,0 +1,286 @@
+2020-03-19 21:14:06 [scrapy.utils.log] INFO: Scrapy 2.0.0 started (bot: stackoverflow_logging)
+2020-03-19 21:14:06 [scrapy.utils.log] INFO: Versions: lxml 4.5.0.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.10.0, Python 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 20:34:20) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Windows-10-10.0.18362-SP0
+2020-03-19 21:14:06 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2020-03-19 21:14:06 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'stackoverflow_logging',
+ 'LOG_FILE': 'tmp/log.txt',
+ 'NEWSPIDER_MODULE': 'stackoverflow_logging.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['stackoverflow_logging.spiders']}
+2020-03-19 21:14:06 [scrapy.extensions.telnet] INFO: Telnet Password: 1acaf65abb57d587
+2020-03-19 21:14:06 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-03-19 21:14:06 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-19 21:14:06 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-19 21:14:06 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2020-03-19 21:14:06 [scrapy.core.engine] INFO: Spider opened
+2020-03-19 21:14:06 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-19 21:14:06 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6024
+2020-03-19 21:14:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/robots.txt> (referer: None)
+2020-03-19 21:14:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/questions?sort=featured> (referer: None)
+2020-03-19 21:14:08 [logger] INFO: loading the item into the scraper
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'Using regular expressions in Prometheus relabel_configs '
+             'source_labels',
+ 'url': 'https://stackoverflow.com/questions/60601782/using-regular-expressions-in-prometheus-relabel-configs-source-labels'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'could not actually find how from_db_value works in django source '
+             'code?',
+ 'url': 'https://stackoverflow.com/questions/60560775/could-not-actually-find-how-from-db-value-works-in-django-source-code'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'How to consuming the WSDL web service using Pkcs12 keystore '
+             'certificate',
+ 'url': 'https://stackoverflow.com/questions/60209531/how-to-consuming-the-wsdl-web-service-using-pkcs12-keystore-certificate'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'Pre pulling docker images in AMI to reduce node and pod fresh '
+             "start time slows down it's execution when using nvidia-docker "
+             'with GPU enabled pods',
+ 'url': 'https://stackoverflow.com/questions/60313903/pre-pulling-docker-images-in-ami-to-reduce-node-and-pod-fresh-start-time-slows-d'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'How to pipe stdout from docker-run in dockerpy',
+ 'url': 'https://stackoverflow.com/questions/60555241/how-to-pipe-stdout-from-docker-run-in-dockerpy'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'Gmail POP3 not getting all messages in Java application',
+ 'url': 'https://stackoverflow.com/questions/31964593/gmail-pop3-not-getting-all-messages-in-java-application'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'Encryption-Decryption not working between the client-sever '
+             'program',
+ 'url': 'https://stackoverflow.com/questions/60510043/encryption-decryption-not-working-between-the-client-sever-program'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'Using Sass Variables with CSS3 Media Queries',
+ 'url': 'https://stackoverflow.com/questions/9122195/using-sass-variables-with-css3-media-queries'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'ACF Repeater field returns string containing the count of '
+             'repeater',
+ 'url': 'https://stackoverflow.com/questions/60491928/acf-repeater-field-returns-string-containing-the-count-of-repeater'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'Create multiple terminals and run commands in VSCode',
+ 'url': 'https://stackoverflow.com/questions/60621321/create-multiple-terminals-and-run-commands-in-vscode'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'IP range based access control to additional resources from '
+             'different storage account on Azure',
+ 'url': 'https://stackoverflow.com/questions/60604529/ip-range-based-access-control-to-additional-resources-from-different-storage-acc'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'Scrapy - Yield URL when max redirects reached[301]',
+ 'url': 'https://stackoverflow.com/questions/60624455/scrapy-yield-url-when-max-redirects-reached301'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'What is alternative for X-Editable bootstrap 4?',
+ 'url': 'https://stackoverflow.com/questions/60464495/what-is-alternative-for-x-editable-bootstrap-4'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'Updating part of an observable used in async pipe',
+ 'url': 'https://stackoverflow.com/questions/60572097/updating-part-of-an-observable-used-in-async-pipe'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'SWIG C++/Java Director - assume override for method defined '
+             'using javaout?',
+ 'url': 'https://stackoverflow.com/questions/60616737/swig-c-java-director-assume-override-for-method-defined-using-javaout'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'apscheduler 3.6.1 background scheduler mysteriously stops '
+             'without event or error',
+ 'url': 'https://stackoverflow.com/questions/60606944/apscheduler-3-6-1-background-scheduler-mysteriously-stops-without-event-or-error'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'WordPress shortcode with multiline parameters',
+ 'url': 'https://stackoverflow.com/questions/60190715/wordpress-shortcode-with-multiline-parameters'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'Storing Parquet file partitioning columns in different files',
+ 'url': 'https://stackoverflow.com/questions/60544854/storing-parquet-file-partitioning-columns-in-different-files'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'Swagger-PHP OpenAPI nested route',
+ 'url': 'https://stackoverflow.com/questions/60592276/swagger-php-openapi-nested-route'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'Get PR number from github templates',
+ 'url': 'https://stackoverflow.com/questions/60493631/get-pr-number-from-github-templates'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'Using RNN for text generation it always predicts the same letter',
+ 'url': 'https://stackoverflow.com/questions/60605838/using-rnn-for-text-generation-it-always-predicts-the-same-letter'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'How to add sliding window mechanism to these programs?',
+ 'url': 'https://stackoverflow.com/questions/60620557/how-to-add-sliding-window-mechanism-to-these-programs'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'Apple In-App Purchase and Receipt Refresh',
+ 'url': 'https://stackoverflow.com/questions/60480611/apple-in-app-purchase-and-receipt-refresh'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'Log a user out of a website when they put their computer to '
+             'sleep',
+ 'url': 'https://stackoverflow.com/questions/60624694/log-a-user-out-of-a-website-when-they-put-their-computer-to-sleep'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'Google AMP : `Method: ampUrls.batchGet` is throwing `NO_AMP_URL` '
+             'even if the AMP is present',
+ 'url': 'https://stackoverflow.com/questions/60614212/google-amp-method-ampurls-batchget-is-throwing-no-amp-url-even-if-the-amp'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'AWS amplify + cognito user pool : not able to get authenticated '
+             'user after login without second call',
+ 'url': 'https://stackoverflow.com/questions/60613867/aws-amplify-cognito-user-pool-not-able-to-get-authenticated-user-after-login'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'Cannot drag an image outside of card view',
+ 'url': 'https://stackoverflow.com/questions/60599416/cannot-drag-an-image-outside-of-card-view'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'Java ThreadPoolExecutor: Updating core pool size dynamically '
+             'rejects incoming tasks intermittently',
+ 'url': 'https://stackoverflow.com/questions/60629936/java-threadpoolexecutor-updating-core-pool-size-dynamically-rejects-incoming-ta'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'App build failed in xcode with Continuing in background (Failed '
+             'to display Xcode notification) due to the sentry',
+ 'url': 'https://stackoverflow.com/questions/60630429/app-build-failed-in-xcode-with-continuing-in-background-failed-to-display-xcode'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'got confused on deeplink in React navigation version 5',
+ 'url': 'https://stackoverflow.com/questions/60628688/got-confused-on-deeplink-in-react-navigation-version-5'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'Express.js CORS configuration, PUT does not work?',
+ 'url': 'https://stackoverflow.com/questions/60631168/express-js-cors-configuration-put-does-not-work'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'Not able to add an apple account to the visual studio 2017',
+ 'url': 'https://stackoverflow.com/questions/60630616/not-able-to-add-an-apple-account-to-the-visual-studio-2017'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'How to fix issue with msg about blocked webdriver.dll when it is '
+             'not blocked',
+ 'url': 'https://stackoverflow.com/questions/60206160/how-to-fix-issue-with-msg-about-blocked-webdriver-dll-when-it-is-not-blocked'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'Scraping - Loading dynamic buttons',
+ 'url': 'https://stackoverflow.com/questions/60627143/scraping-loading-dynamic-buttons'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'How to add Report-To Content-Security-Policy directly in '
+             'web.config',
+ 'url': 'https://stackoverflow.com/questions/60632559/how-to-add-report-to-content-security-policy-directly-in-web-config'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'Validating AuthToken from sign in with apple JS on .net Backend',
+ 'url': 'https://stackoverflow.com/questions/60633179/validating-authtoken-from-sign-in-with-apple-js-on-net-backend'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'Realm get certain properties of matching query than all '
+             'properties?',
+ 'url': 'https://stackoverflow.com/questions/60631986/realm-get-certain-properties-of-matching-query-than-all-properties'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'Dynamically open PDF in flutter using pdf viewer scaffold',
+ 'url': 'https://stackoverflow.com/questions/60634604/dynamically-open-pdf-in-flutter-using-pdf-viewer-scaffold'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': "Webpack doesn't rerun nunjucks after renaming/delete/create new "
+             'files',
+ 'url': 'https://stackoverflow.com/questions/60635024/webpack-doesnt-rerun-nunjucks-after-renaming-delete-create-new-files'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'play video in loop using setTimeout',
+ 'url': 'https://stackoverflow.com/questions/60635606/play-video-in-loop-using-settimeout'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'Use boto to enable inventory',
+ 'url': 'https://stackoverflow.com/questions/60615911/use-boto-to-enable-inventory'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'Restore from backup to another instance',
+ 'url': 'https://stackoverflow.com/questions/60596408/restore-from-backup-to-another-instance'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'Create Interactive hierarchy diagram from pandas/dictionary',
+ 'url': 'https://stackoverflow.com/questions/60625834/create-interactive-hierarchy-diagram-from-pandas-dictionary'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'Why do React components that throw errors render twice?',
+ 'url': 'https://stackoverflow.com/questions/57717298/why-do-react-components-that-throw-errors-render-twice'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'Zebra printer printing UTF-8 character as two ASCII characters',
+ 'url': 'https://stackoverflow.com/questions/60627390/zebra-printer-printing-utf-8-character-as-two-ascii-characters'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'Retrieve application state from background thread?',
+ 'url': 'https://stackoverflow.com/questions/60528986/retrieve-application-state-from-background-thread'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'python.clang AST parsing: getting c++ template argument of field '
+             'declaration',
+ 'url': 'https://stackoverflow.com/questions/59171077/python-clang-ast-parsing-getting-c-template-argument-of-field-declaration'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'Angular 7 Reusable ng-templates',
+ 'url': 'https://stackoverflow.com/questions/60637929/angular-7-reusable-ng-templates'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'Authorization server, Oauth2 and auth0',
+ 'url': 'https://stackoverflow.com/questions/60634890/authorization-server-oauth2-and-auth0'}
+2020-03-19 21:14:08 [logger] DEBUG: Adding data to the item loader object
+2020-03-19 21:14:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions?sort=featured>
+{'question': 'How to do case insensitive sorting of Norwegian characters (Æ, '
+             'Ø, and Å) using Hibernate Lucene Search?',
+ 'url': 'https://stackoverflow.com/questions/39264308/how-to-do-case-insensitive-sorting-of-norwegian-characters-%c3%86-%c3%98-and-%c3%85-using-h'}
+2020-03-19 21:14:08 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-03-19 21:14:08 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 518,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 62097,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 1.390649,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 3, 19, 15, 44, 8, 49934),
+ 'item_scraped_count': 50,
+ 'log_count/DEBUG': 102,
+ 'log_count/INFO': 11,
+ 'response_received_count': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2020, 3, 19, 15, 44, 6, 659285)}
+2020-03-19 21:14:08 [scrapy.core.engine] INFO: Spider closed (finished)

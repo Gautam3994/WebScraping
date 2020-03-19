@@ -1,6 +1,6 @@
 import scrapy
 from scrapy.loader import ItemLoader
-from scrapy.loader.processors import MapCompose
+# from scrapy.loader.processors import MapCompose
 from scrapy.loader.processors import TakeFirst
 from amazon_prods_itemloaders.items import AmazonMacbooksItem
 
@@ -24,6 +24,7 @@ class MacbooksDetails(scrapy.Spider):
             product_loader.default_output_processor = TakeFirst()
             if "Sponsored" not in result.css('div.a-spacing-micro > span::text').extract():
                 if result.css('span.a-size-medium::text').extract() != emptylist:
+                    # link = result.css("h2.a-size-mini > a.a-link-normal::attr(href)")
                     product_loader.add_css('title', 'span.a-size-medium::text')
                     product_loader.add_css('current_price', 'span.a-price-whole::text')
                     product_loader.add_css('review', 'i.a-icon > span.a-icon-alt::text')
@@ -32,5 +33,32 @@ class MacbooksDetails(scrapy.Spider):
                     product_loader.add_css('link_to_product', 'h2.a-size-mini > a.a-link-normal::attr(href)')
                     yield product_loader.load_item()  # difference between yield and return is that yield doesnt exit the loop
 
+    # LOOK HOW TO GET COMPANY NAME AND STORE ONLY IF ITS MADE BY APPLE -- WORKOUT ALREADY FOUND BUT THIS FUNCTIONALITY MIGHT BE REQUIRED IN OTHER CASE
+    # def parse_page_2(self, response):
 
 
+
+"""
+    def parse(self, response):
+        search_results = response.css('div.a-spacing-medium')
+        emptylist = []
+        for result in search_results:
+            # product_loader = ItemLoader(item=AmazonMacbooksItem(), selector=result)
+            # product_loader.default_input_processor = MapCompose(truncate_text)
+            # product_loader.default_output_processor = TakeFirst()
+            if "Sponsored" not in result.css('div.a-spacing-micro > span::text').extract():
+                if result.css('span.a-size-medium::text').extract() != emptylist:
+                    link = "https://amazon.in/dp/" + (result.css("h2.a-size-mini > a.a-link-normal::attr(href)").extract()[0]).split("/")[-2]
+                    fetch(link)
+                    break
+                    product_loader.add_css('title', 'span.a-size-medium::text')
+                    product_loader.add_css('current_price', 'span.a-price-whole::text')
+                    product_loader.add_css('review', 'i.a-icon > span.a-icon-alt::text')
+                    product_loader.add_css('no_of_reviews', 'span > a.a-link-normal > span.a-size-base::text')
+                    product_loader.add_css('original_price', 'span.a-offscreen::text')
+                    product_loader.add_css('link_to_product', 'h2.a-size-mini > a.a-link-normal::attr(href)')
+                    yield product_loader.load_item()
+
+    response.css('a#bylineInfo::text').extract()[0]
+    private proxies, user agents, disabling cookies, enabling dont_merge cookies
+"""

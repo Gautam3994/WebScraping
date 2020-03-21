@@ -1,0 +1,13 @@
+setup.py
+broadcrawlers/__init__.py
+broadcrawlers/items.py
+broadcrawlers/middlewares.py
+broadcrawlers/pipelines.py
+broadcrawlers/settings.py
+broadcrawlers/spiders/__init__.py
+broadcrawlers/spiders/broadcrawl.py
+project.egg-info/PKG-INFO
+project.egg-info/SOURCES.txt
+project.egg-info/dependency_links.txt
+project.egg-info/entry_points.txt
+project.egg-info/top_level.txt

@@ -6,6 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/amazon_prods_itemloaders" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/stackoverflow_logging" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/EmailNotification" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/broadcrawlers" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

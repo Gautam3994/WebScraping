@@ -32,5 +32,4 @@ class MarkAsViable(object):
             raise DropItem()
         return item
 
-
-#! AFTER MAKING CHANGES HERE GO TO SETTINGS
+# ! AFTER MAKING CHANGES HERE GO TO SETTINGS

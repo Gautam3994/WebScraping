@@ -1,0 +1,13 @@
+setup.py
+amazon_prods_itemloaders/__init__.py
+amazon_prods_itemloaders/items.py
+amazon_prods_itemloaders/middlewares.py
+amazon_prods_itemloaders/pipelines.py
+amazon_prods_itemloaders/settings.py
+amazon_prods_itemloaders/spiders/__init__.py
+amazon_prods_itemloaders/spiders/amz_item_loaders.py
+project.egg-info/PKG-INFO
+project.egg-info/SOURCES.txt
+project.egg-info/dependency_links.txt
+project.egg-info/entry_points.txt
+project.egg-info/top_level.txt

@@ -1,0 +1,9 @@
+Use the chrome option to load sites without images.
+
+Disk caching
+
+Close driver after task is finished
+
+Also try to use headless mode as much as possible
+
+Dont follow same pattern for scraping.
